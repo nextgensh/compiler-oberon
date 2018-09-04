@@ -1,0 +1,91 @@
+--- FAIL: Test_err10 (0.00 seconds)
+	err10_test.go:55: 21 : Type mismatch. Cannot assign _INTEGER to INTEGER
+--- FAIL: Test_err11 (0.00 seconds)
+	err11_test.go:63: 20 : Type mismatch. Cannot assign BOOLEAN to INTEGER
+--- FAIL: Test_err12 (0.00 seconds)
+	err12_test.go:63: 20 : Control variable must be an integer
+--- FAIL: Test_err13 (0.00 seconds)
+	err13_test.go:63: 20 : In TO expression expecting INTEGER found _BOOLEAN
+--- FAIL: Test_err14 (0.00 seconds)
+	err14_test.go:63: 20 : expected integer
+--- FAIL: Test_err15 (0.00 seconds)
+	err15_test.go:65: 30 : & cannot be used with _BOOLEAN and BOOLEAN
+--- FAIL: Test_err16 (0.00 seconds)
+	err16_test.go:63: 30 : Type mismatch. Cannot assign _BOOLEAN to _INTEGER
+--- FAIL: Test_err17 (0.00 seconds)
+	err17_test.go:63: 30 : Cannot use - with type _BOOLEAN
+--- FAIL: Test_err18 (0.00 seconds)
+	err18_test.go:63: 38 : Expecting BOOLEAN expression found _INTEGER
+--- FAIL: Test_err19 (0.00 seconds)
+	err19_test.go:63: 28 : & cannot be used with _BOOLEAN and _INTEGER
+--- FAIL: Test_err1 (0.00 seconds)
+	err1_test.go:51: 22 : String literal exceeds size of ARRAY str
+--- FAIL: Test_err20 (0.00 seconds)
+	err20_test.go:63: 36 : Expecting BOOLEAN expression found _ARRAY_CHAR
+--- FAIL: Test_err21 (0.00 seconds)
+	err21_test.go:65: 40 : < cannot be used with _BOOLEAN and _BOOLEAN
+--- FAIL: Test_err22 (0.00 seconds)
+	err22_test.go:67: 10 : Type foo redeclared
+--- FAIL: Test_err23 (0.00 seconds)
+	err23_test.go:69: 21 : Type mismatch. Cannot assign _INTEGER to INTEGER
+--- FAIL: Test_err24 (0.00 seconds)
+	err24_test.go:67: 10 : Type string redeclared
+--- FAIL: Test_err25 (0.00 seconds)
+	err25_test.go:66: 38 : < cannot be used with _INTEGER and _ARRAY_CHAR
+--- FAIL: Test_err26 (0.00 seconds)
+	err26_test.go:66: 38 : < cannot be used with _INTEGER and _ARRAY_INTEGER
+--- FAIL: Test_err27 (0.00 seconds)
+	err27_test.go:67: 17 :Undefined type `a`
+--- FAIL: Test_err28 (0.00 seconds)
+	err28_test.go:67: 10 : Type nesting of `foo1` not allowed
+--- FAIL: Test_err29 (0.00 seconds)
+	err29_test.go:67: 21 : Control variable must be an integer
+--- FAIL: Test_err2 (0.00 seconds)
+	err2_test.go:50: 24 : < cannot be used with _INTEGER and _BOOLEAN
+--- FAIL: Test_err30 (0.00 seconds)
+	err30_test.go:67: 17 : Variable foo1 redeclared
+--- FAIL: Test_err32 (0.00 seconds)
+	err32_test.go:73: 23 :Undefined type `foo4`
+--- FAIL: Test_err33 (0.00 seconds)
+	err33_test.go:73: 19 :Type `foo4` is undefined
+--- FAIL: Test_err34 (0.00 seconds)
+	err34_test.go:73: 21 : Variable x redeclared
+--- FAIL: Test_err35 (0.00 seconds)
+	err35_test.go:72: 18 : Variable x redeclared
+--- FAIL: Test_err36 (0.00 seconds)
+	err36_test.go:72: 18 : Variable x redeclared
+--- FAIL: Test_err37 (0.00 seconds)
+	err37_test.go:72: 18 :Type `bla` is undefined
+--- FAIL: Test_err38 (0.00 seconds)
+	err38_test.go:72: 18 :Type `control` is undefined
+--- FAIL: Test_err39 (0.00 seconds)
+	err39_test.go:79: 28 : `abc` redeclared
+--- FAIL: Test_err3 (0.00 seconds)
+	err3_test.go:51: 22 : Cannot assign string literal to _ARRAY_INTEGER
+--- FAIL: Test_err40 (0.00 seconds)
+	err40_test.go:83: Expected return statement for abc1
+--- FAIL: Test_err41 (0.00 seconds)
+	err41_test.go:88: 18 :Type `foo4` is undefined
+--- FAIL: Test_err42 (0.00 seconds)
+	err42_test.go:89: 35 : Cannot assign to formal variable a
+--- FAIL: Test_err43 (0.00 seconds)
+	err43_test.go:101: Return type, found _BOOLEAN expected _INTEGER
+--- FAIL: Test_err44 (0.00 seconds)
+	err44_test.go:101: Return type, found INTEGER expected _INTEGER
+--- FAIL: Test_err45 (0.00 seconds)
+	err45_test.go:101: Return type `foo` does not match the outer scope `foo`
+--- FAIL: Test_err4 (0.00 seconds)
+	err4_test.go:51: 24 : Cannot apply + to _INTEGER and  _BOOLEAN
+--- FAIL: Test_err5 (0.00 seconds)
+	err5_test.go:51: 16 : Variable c redeclared
+--- FAIL: Test_err6 (0.00 seconds)
+	err6_test.go:51: 32 : Invalid indexing operation, a is not an array
+--- FAIL: Test_err7 (0.00 seconds)
+	err7_test.go:51: 32 : Array index must be INTEGER found _ARRAY_CHAR
+--- FAIL: Test_err9 (0.00 seconds)
+	err9_test.go:54: 16 :Undefined type `example`
+--- FAIL: Test_simple (0.00 seconds)
+	simple_test.go:133: 86 : Type mismatch. Cannot assign foo1 to foo
+FAIL
+exit status 1
+FAIL	cs553s2013/compiler	0.040s

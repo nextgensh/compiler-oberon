@@ -1,0 +1,135 @@
+package compiler
+
+import (
+	"testing"
+)
+
+func Test_simple(t *testing.T) {
+	s :=
+		`
+(* Fib code *)
+
+MODULE mymod;
+
+TYPE 
+	string = ARRAY 11 OF CHAR;
+	foo = ARRAY 10 OF INTEGER;
+	foo1 = ARRAY 0 OF INTEGER;
+
+VAR a,b,d : INTEGER;
+	c : BOOLEAN;
+	f1, f3 : foo;
+	f2 : foo1;
+	str : string;
+	control : INTEGER;
+	e : CHAR;
+
+PROCEDURE abc (VAR x : foo; y : BOOLEAN; VAR str1 : string);
+	VAR
+		e, b : BOOLEAN;
+		d : INTEGER;
+	
+	BEGIN
+		e := TRUE;
+
+	END abc;
+
+PROCEDURE abc1 (VAR a : foo; y : BOOLEAN; VAR str1 : string) : INTEGER;
+	VAR
+		b : BOOLEAN;
+		d : INTEGER;
+	
+	BEGIN
+		b := y;
+		a[0]:= 10;
+
+	RETURN a[1]
+
+	END abc1;
+
+PROCEDURE abc2 (x : INTEGER) : INTEGER;
+
+	TYPE
+		foo = ARRAY 10 OF BOOLEAN;
+
+	VAR
+		a : foo;
+
+	RETURN 0
+
+	END abc2;
+
+PROCEDURE abc3 (x : string) : string;
+
+	TYPE
+		foo = ARRAY 10 OF BOOLEAN;
+
+	VAR
+		a : foo;
+		e : INTEGER;
+	
+	BEGIN
+		a[0] := TRUE;
+		e := 20;
+
+	RETURN "abcdecfghi"
+
+	END abc3;
+
+PROCEDURE abc4 ();
+
+	VAR
+		a : foo;
+		e : INTEGER;
+
+
+	END abc4;
+
+	BEGIN
+	
+	FOR control := (f1[20]+f2[2]*f3[1]-100/3/3) TO (control + f2[f1[f3[f2[10]]]]) BY 10000 DO
+		
+		e := "A";
+
+		f1 := f2;
+		a := 10;
+		b := -f1[30]; 
+		d := 2;
+		f1[2] := 10;
+		str := "hello world"; 
+		(* The ultimate expression test *)
+		c := (1 < f3[d+a]) & c OR c & ((1 + 2 + 3) < 10);
+		(* A simple boolean expression *)
+		c := (TRUE & TRUE) OR FALSE;
+
+		str := abc3("hello world");
+		
+		FOR control := 0 TO 1 DO
+			str := "lame!!"
+		END;
+
+		WHILE c DO
+			(* A simple if control block tested *)
+			IF "h" < "a" THEN 
+				a := 2;
+			ELSIF c OR (1 < 2) THEN
+				a := f1[b+f2[control * 23 + f3[3]]];
+					IF (c = c) OR (c # c) & (a # a) THEN
+						c := FALSE;
+					END;
+			ELSE 
+				a := 3;
+			END;
+		END;
+	
+	END;
+
+END mymod.
+
+
+`
+
+	if ok, msg := Checker(s); !ok {
+		 t.Errorf(msg)
+	}
+}

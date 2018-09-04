@@ -1,0 +1,126 @@
+
+	
+	func (n *Mul) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Div) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Mod) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *BAnd) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *BOr) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *UAdd) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *USub) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Gtcontrol) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Ltecontrol) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Gtecontrol) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Eqcontrol) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Necontrol) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Store) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Add) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Const) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Addrgp) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Ltcontrol) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Jmp) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Label) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Indir) SetReg(reg int) {
+		n.reg = reg
+	}
+	
+
+	
+	func (n *Sub) SetReg(reg int) {
+		n.reg = reg
+	}
+	
